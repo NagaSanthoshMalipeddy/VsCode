@@ -1,0 +1,18 @@
+.menu{
+    width:100%;
+}
+.menu a{
+    background-color: darkgray;
+    display: block;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: darkgoldenrod;
+    counter-reset: whitesmoke;
+    color: white;
+}
+.menu a.active{
+    color:lightyellow;
+}

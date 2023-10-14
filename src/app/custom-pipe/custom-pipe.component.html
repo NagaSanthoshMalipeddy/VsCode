@@ -1,0 +1,27 @@
+<div class="display-1 text-center">custom-pipe works!</div>
+<div class="container">
+    <div class="text-center display-3">
+        Square of a number
+    </div>
+    <hr>
+    <div class="display-3 text-center text-bg-warning">
+        side : {{side}} === Area : {{side|customPipe}}
+    </div>
+    <hr>
+    <div class="display-6 text-center text-bg-warning">
+        TeraByte : {{terabytes}} === KiloByte : {{terabytes|bconverter:'kb':1}}
+    </div>
+    <hr>
+    <div class="display-6 text-center text-bg-warning">
+        Img1Size : {{img1Size|bconverter:'kb':2}}<br>
+        Img2Size : {{img2Size|bconverter:'kb':2}}<br> <hr>
+        File1Size : {{file1Size|bconverter:'kb':2}}<br>
+        File2Size : {{file2Size|bconverter:'kb':2}}<br><hr>
+        db1Size : {{db1Size|bconverter:'kb':2}}<br>
+        db2Size : {{db2Size|bconverter:'kb':2}}
+    </div>
+    <div class="display-6 text-center text-bg-warning">
+        <h3>type 1 {{name|welcome:town:state:country}}</h3>
+        <h3>type 2 {{name|welcome:country:undefined:state}}</h3>
+    </div>
+</div>

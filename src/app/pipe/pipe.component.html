@@ -1,0 +1,19 @@
+<div class="display-1">pipe works!</div>
+<table class="m-2 table myT table-hover table-striped table-dark">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Date of Joining</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of emps">
+            <td>{{i.eid}}</td>
+            <td>{{i.ename|titlecase}}</td>
+            <td>{{i.esal|currency:'USD'}}</td>
+            <td>{{i.edoj|date:'dd/MMM/YYYY'}}</td>
+        </tr>
+    </tbody>
+</table>
